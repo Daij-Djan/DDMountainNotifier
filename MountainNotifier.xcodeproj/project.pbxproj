@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B43A2F97158E3F5500202EF2 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2F8C158E3F5500202EF2 /* DDAppDelegate.m */; };
+		B43A2F98158E3F5500202EF2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B43A2F8D158E3F5500202EF2 /* Credits.rtf */; };
+		B43A2F99158E3F5500202EF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B43A2F8F158E3F5500202EF2 /* InfoPlist.strings */; };
+		B43A2F9A158E3F5500202EF2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B43A2F91158E3F5500202EF2 /* MainMenu.xib */; };
+		B43A2F9B158E3F5500202EF2 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B43A2F93158E3F5500202EF2 /* Icon.icns */; };
+		B43A2F9D158E3F5500202EF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2F95158E3F5500202EF2 /* main.m */; };
+		B43A2FA7158E3F8900202EF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FA6158E3F8900202EF2 /* main.m */; };
+		B43A2FB3158E532A00202EF2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B43A2FB2158E532A00202EF2 /* libz.dylib */; };
+		B43A2FB9158E537700202EF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F06AA8158A9B8500249913 /* Cocoa.framework */; };
+		B43A2FDA158E541100202EF2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FC9158E541100202EF2 /* crypt.h */; };
+		B43A2FDB158E541100202EF2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FCA158E541100202EF2 /* ioapi.c */; };
+		B43A2FDC158E541100202EF2 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FCB158E541100202EF2 /* ioapi.h */; };
+		B43A2FDD158E541100202EF2 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FCC158E541100202EF2 /* mztools.c */; };
+		B43A2FDE158E541100202EF2 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FCD158E541100202EF2 /* mztools.h */; };
+		B43A2FDF158E541100202EF2 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FCE158E541100202EF2 /* unzip.c */; };
+		B43A2FE0158E541100202EF2 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FCF158E541100202EF2 /* unzip.h */; };
+		B43A2FE1158E541100202EF2 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FD0158E541100202EF2 /* zip.c */; };
+		B43A2FE2158E541100202EF2 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FD1158E541100202EF2 /* zip.h */; };
+		B43A2FE3158E541100202EF2 /* DDZippedFileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FD4158E541100202EF2 /* DDZippedFileInfo.h */; };
+		B43A2FE4158E541100202EF2 /* DDZippedFileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FD5158E541100202EF2 /* DDZippedFileInfo.m */; };
+		B43A2FE5158E541100202EF2 /* DDZipReader.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FD6158E541100202EF2 /* DDZipReader.h */; };
+		B43A2FE6158E541100202EF2 /* DDZipReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FD7158E541100202EF2 /* DDZipReader.m */; };
+		B43A2FE7158E541100202EF2 /* DDZipWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B43A2FD8158E541100202EF2 /* DDZipWriter.h */; };
+		B43A2FE8158E541100202EF2 /* DDZipWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A2FD9158E541100202EF2 /* DDZipWriter.m */; };
+		B43A2FE9158E542A00202EF2 /* libDDMinizip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B43A2FB8158E537700202EF2 /* libDDMinizip.a */; };
+		B43A2FEC158E54A100202EF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F06AA8158A9B8500249913 /* Cocoa.framework */; };
+		B43A2FED158E54B300202EF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F06AA8158A9B8500249913 /* Cocoa.framework */; };
+		B4AD517415D1B89900DAD427 /* DDEmbeddedDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AD517315D1B89900DAD427 /* DDEmbeddedDataReader.m */; };
+		B4AD517C15D1BA6300DAD427 /* zipHelper.sh in Resources */ = {isa = PBXBuildFile; fileRef = B4AD517B15D1BA6300DAD427 /* zipHelper.sh */; };
+		B4EA1C3F15D295340007B3C8 /* GrowlMountainNotifierPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EA1C2415D295340007B3C8 /* GrowlMountainNotifierPrefs.xib */; };
+		B4EA1C4015D295340007B3C8 /* GrowlMountainNotifierDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EA1C3015D295340007B3C8 /* GrowlMountainNotifierDisplay.m */; };
+		B4EA1C4115D295340007B3C8 /* GrowlMountainNotifierPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EA1C3215D295340007B3C8 /* GrowlMountainNotifierPrefs.m */; };
+		B4EA1C6315D299450007B3C8 /* MountainNotifier in CopyFiles */ = {isa = PBXBuildFile; fileRef = B43A2FA2158E3F8900202EF2 /* MountainNotifier */; };
+		B4EA1C6A15D2BE3A0007B3C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA1C6915D2BE3A0007B3C8 /* Security.framework */; };
+		B4EA1C6C15D2BE420007B3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA1BBF15D293720007B3C8 /* Foundation.framework */; };
+		B4EA1C6E15D2BE4C0007B3C8 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA1C6D15D2BE4C0007B3C8 /* PreferencePanes.framework */; };
+		B4EA1C6F15D2BE550007B3C8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EA1BBD15D293720007B3C8 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B43A2FB0158E4F6D00202EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F06A8B158A92FC00249913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F06AAD158A9C5200249913;
+			remoteInfo = MountainNotifierTemplate;
+		};
+		B43A2FEA158E543E00202EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F06A8B158A92FC00249913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43A2FB7158E537700202EF2;
+			remoteInfo = DDMinizip;
+		};
+		B4EA1C6015D2992D0007B3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F06A8B158A92FC00249913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43A2FA1158E3F8900202EF2;
+			remoteInfo = MountainNotifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4EA1C6215D2993F0007B3C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				B4EA1C6315D299450007B3C8 /* MountainNotifier in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F06AF9158AD2CB00249913 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B43A2F88158E3F2500202EF2 /* MountainNotifierTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MountainNotifierTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43A2F8B158E3F5500202EF2 /* DDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
+		B43A2F8C158E3F5500202EF2 /* DDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
+		B43A2F8E158E3F5500202EF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B43A2F90158E3F5500202EF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B43A2F92158E3F5500202EF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B43A2F93158E3F5500202EF2 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		B43A2F94158E3F5500202EF2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43A2F95158E3F5500202EF2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B43A2F96158E3F5500202EF2 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B43A2FA2158E3F8900202EF2 /* MountainNotifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MountainNotifier; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43A2FA6158E3F8900202EF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B43A2FB2158E532A00202EF2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B43A2FB8158E537700202EF2 /* libDDMinizip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDMinizip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43A2FC7158E541100202EF2 /* LICENSE.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = LICENSE.rtf; sourceTree = "<group>"; };
+		B43A2FC9158E541100202EF2 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		B43A2FCA158E541100202EF2 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		B43A2FCB158E541100202EF2 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		B43A2FCC158E541100202EF2 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		B43A2FCD158E541100202EF2 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		B43A2FCE158E541100202EF2 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		B43A2FCF158E541100202EF2 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		B43A2FD0158E541100202EF2 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		B43A2FD1158E541100202EF2 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		B43A2FD2158E541100202EF2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B43A2FD4158E541100202EF2 /* DDZippedFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZippedFileInfo.h; sourceTree = "<group>"; };
+		B43A2FD5158E541100202EF2 /* DDZippedFileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDZippedFileInfo.m; sourceTree = "<group>"; };
+		B43A2FD6158E541100202EF2 /* DDZipReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZipReader.h; sourceTree = "<group>"; };
+		B43A2FD7158E541100202EF2 /* DDZipReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDZipReader.m; sourceTree = "<group>"; };
+		B43A2FD8158E541100202EF2 /* DDZipWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDZipWriter.h; sourceTree = "<group>"; };
+		B43A2FD9158E541100202EF2 /* DDZipWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDZipWriter.m; sourceTree = "<group>"; };
+		B4AD517215D1B89900DAD427 /* DDEmbeddedDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDEmbeddedDataReader.h; sourceTree = "<group>"; };
+		B4AD517315D1B89900DAD427 /* DDEmbeddedDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDEmbeddedDataReader.m; sourceTree = "<group>"; };
+		B4AD517B15D1BA6300DAD427 /* zipHelper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = zipHelper.sh; sourceTree = "<group>"; };
+		B4B2F0C015D2519300B1DD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4EA1BBA15D293720007B3C8 /* MountianGrowlPlugin.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MountianGrowlPlugin.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EA1BBD15D293720007B3C8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B4EA1BBF15D293720007B3C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4EA1C2515D295340007B3C8 /* cs */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = cs; path = cs.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2615D295340007B3C8 /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2715D295340007B3C8 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2815D295340007B3C8 /* el */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = el; path = el.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2915D295340007B3C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2A15D295340007B3C8 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2B15D295340007B3C8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C2F15D295340007B3C8 /* GrowlMountainNotifierDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMountainNotifierDisplay.h; sourceTree = "<group>"; };
+		B4EA1C3015D295340007B3C8 /* GrowlMountainNotifierDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlMountainNotifierDisplay.m; sourceTree = "<group>"; };
+		B4EA1C3115D295340007B3C8 /* GrowlMountainNotifierPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlMountainNotifierPrefs.h; sourceTree = "<group>"; };
+		B4EA1C3215D295340007B3C8 /* GrowlMountainNotifierPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlMountainNotifierPrefs.m; sourceTree = "<group>"; };
+		B4EA1C3415D295340007B3C8 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3515D295340007B3C8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3615D295340007B3C8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3715D295340007B3C8 /* lv */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = lv; path = lv.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3A15D295340007B3C8 /* MountianGrowlPlugin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MountianGrowlPlugin-Info.plist"; sourceTree = "<group>"; };
+		B4EA1C3B15D295340007B3C8 /* MountianGrowlPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MountianGrowlPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		B4EA1C3C15D295340007B3C8 /* nb */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nb; path = nb.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3D15D295340007B3C8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/GrowlMountainNotifierPrefs.xib; sourceTree = "<group>"; };
+		B4EA1C3E15D295340007B3C8 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-PT"; path = "pt-PT.lproj/GrowlMountainNotifierPrefs.xib"; sourceTree = "<group>"; };
+		B4EA1C4A15D296340007B3C8 /* GrowlDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDefines.h; sourceTree = "<group>"; };
+		B4EA1C4B15D296340007B3C8 /* GrowlDefinesInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDefinesInternal.h; sourceTree = "<group>"; };
+		B4EA1C4C15D296340007B3C8 /* GrowlDisplayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlDisplayPlugin.h; sourceTree = "<group>"; };
+		B4EA1C4D15D296340007B3C8 /* GrowlNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotification.h; sourceTree = "<group>"; };
+		B4EA1C4E15D296340007B3C8 /* GrowlPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlPlugin.h; sourceTree = "<group>"; };
+		B4EA1C4F15D296340007B3C8 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		B4EA1C6915D2BE3A0007B3C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B4EA1C6D15D2BE4C0007B3C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		B4F06AA8158A9B8500249913 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B43A2F9F158E3F8900202EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FED158E54B300202EF2 /* Cocoa.framework in Frameworks */,
+				B43A2FE9158E542A00202EF2 /* libDDMinizip.a in Frameworks */,
+				B43A2FB3158E532A00202EF2 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43A2FB5158E537700202EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FB9158E537700202EF2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EA1BB715D293720007B3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EA1C6F15D2BE550007B3C8 /* AppKit.framework in Frameworks */,
+				B4EA1C6E15D2BE4C0007B3C8 /* PreferencePanes.framework in Frameworks */,
+				B4EA1C6C15D2BE420007B3C8 /* Foundation.framework in Frameworks */,
+				B4EA1C6A15D2BE3A0007B3C8 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F06AAB158A9C5200249913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FEC158E54A100202EF2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B43A2F8A158E3F5500202EF2 /* MountainNotifierTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B43A2F8B158E3F5500202EF2 /* DDAppDelegate.h */,
+				B43A2F8C158E3F5500202EF2 /* DDAppDelegate.m */,
+				B43A2F8D158E3F5500202EF2 /* Credits.rtf */,
+				B43A2F8F158E3F5500202EF2 /* InfoPlist.strings */,
+				B43A2F91158E3F5500202EF2 /* MainMenu.xib */,
+				B43A2F93158E3F5500202EF2 /* Icon.icns */,
+				B43A2F94158E3F5500202EF2 /* Info.plist */,
+				B43A2F95158E3F5500202EF2 /* main.m */,
+				B43A2F96158E3F5500202EF2 /* Prefix.pch */,
+				B4AD517B15D1BA6300DAD427 /* zipHelper.sh */,
+			);
+			path = MountainNotifierTemplate;
+			sourceTree = "<group>";
+		};
+		B43A2FA5158E3F8900202EF2 /* MountainNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD517215D1B89900DAD427 /* DDEmbeddedDataReader.h */,
+				B4AD517315D1B89900DAD427 /* DDEmbeddedDataReader.m */,
+				B43A2FA6158E3F8900202EF2 /* main.m */,
+				B4B2F0C015D2519300B1DD34 /* Info.plist */,
+			);
+			path = MountainNotifier;
+			sourceTree = "<group>";
+		};
+		B43A2FBE158E537700202EF2 /* DDMinizip */ = {
+			isa = PBXGroup;
+			children = (
+				B43A2FC7158E541100202EF2 /* LICENSE.rtf */,
+				B43A2FC8158E541100202EF2 /* other */,
+				B43A2FD2158E541100202EF2 /* README.md */,
+				B43A2FD3158E541100202EF2 /* src */,
+			);
+			path = DDMinizip;
+			sourceTree = "<group>";
+		};
+		B43A2FC8158E541100202EF2 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				B43A2FC9158E541100202EF2 /* crypt.h */,
+				B43A2FCA158E541100202EF2 /* ioapi.c */,
+				B43A2FCB158E541100202EF2 /* ioapi.h */,
+				B43A2FCC158E541100202EF2 /* mztools.c */,
+				B43A2FCD158E541100202EF2 /* mztools.h */,
+				B43A2FCE158E541100202EF2 /* unzip.c */,
+				B43A2FCF158E541100202EF2 /* unzip.h */,
+				B43A2FD0158E541100202EF2 /* zip.c */,
+				B43A2FD1158E541100202EF2 /* zip.h */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		B43A2FD3158E541100202EF2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B43A2FD4158E541100202EF2 /* DDZippedFileInfo.h */,
+				B43A2FD5158E541100202EF2 /* DDZippedFileInfo.m */,
+				B43A2FD6158E541100202EF2 /* DDZipReader.h */,
+				B43A2FD7158E541100202EF2 /* DDZipReader.m */,
+				B43A2FD8158E541100202EF2 /* DDZipWriter.h */,
+				B43A2FD9158E541100202EF2 /* DDZipWriter.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B4EA1C2315D295340007B3C8 /* MountianGrowlPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				B4EA1C2C15D295340007B3C8 /* growl-1.3-headers */,
+				B4EA1C2415D295340007B3C8 /* GrowlMountainNotifierPrefs.xib */,
+				B4EA1C2F15D295340007B3C8 /* GrowlMountainNotifierDisplay.h */,
+				B4EA1C3015D295340007B3C8 /* GrowlMountainNotifierDisplay.m */,
+				B4EA1C3115D295340007B3C8 /* GrowlMountainNotifierPrefs.h */,
+				B4EA1C3215D295340007B3C8 /* GrowlMountainNotifierPrefs.m */,
+				B4EA1C3B15D295340007B3C8 /* MountianGrowlPlugin-Prefix.pch */,
+				B4EA1C3A15D295340007B3C8 /* MountianGrowlPlugin-Info.plist */,
+			);
+			path = MountianGrowlPlugin;
+			sourceTree = "<group>";
+		};
+		B4EA1C2C15D295340007B3C8 /* growl-1.3-headers */ = {
+			isa = PBXGroup;
+			children = (
+				B4EA1C4A15D296340007B3C8 /* GrowlDefines.h */,
+				B4EA1C4B15D296340007B3C8 /* GrowlDefinesInternal.h */,
+				B4EA1C4C15D296340007B3C8 /* GrowlDisplayPlugin.h */,
+				B4EA1C4D15D296340007B3C8 /* GrowlNotification.h */,
+				B4EA1C4E15D296340007B3C8 /* GrowlPlugin.h */,
+				B4EA1C4F15D296340007B3C8 /* NSStringAdditions.h */,
+			);
+			path = "growl-1.3-headers";
+			sourceTree = "<group>";
+		};
+		B4F06A89158A92FC00249913 = {
+			isa = PBXGroup;
+			children = (
+				B43A2F8A158E3F5500202EF2 /* MountainNotifierTemplate */,
+				B43A2FA5158E3F8900202EF2 /* MountainNotifier */,
+				B4EA1C2315D295340007B3C8 /* MountianGrowlPlugin */,
+				B43A2FBE158E537700202EF2 /* DDMinizip */,
+				B4F06A97158A92FC00249913 /* Frameworks */,
+				B43A2F88158E3F2500202EF2 /* MountainNotifierTemplate.app */,
+				B4EA1BBA15D293720007B3C8 /* MountianGrowlPlugin.growlView */,
+				B43A2FA2158E3F8900202EF2 /* MountainNotifier */,
+				B43A2FB8158E537700202EF2 /* libDDMinizip.a */,
+			);
+			sourceTree = "<group>";
+		};
+		B4F06A97158A92FC00249913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4EA1BBF15D293720007B3C8 /* Foundation.framework */,
+				B4EA1BBD15D293720007B3C8 /* AppKit.framework */,
+				B4EA1C6D15D2BE4C0007B3C8 /* PreferencePanes.framework */,
+				B4EA1C6915D2BE3A0007B3C8 /* Security.framework */,
+				B4F06AA8158A9B8500249913 /* Cocoa.framework */,
+				B43A2FB2158E532A00202EF2 /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B43A2FB6158E537700202EF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FDA158E541100202EF2 /* crypt.h in Headers */,
+				B43A2FDC158E541100202EF2 /* ioapi.h in Headers */,
+				B43A2FDE158E541100202EF2 /* mztools.h in Headers */,
+				B43A2FE0158E541100202EF2 /* unzip.h in Headers */,
+				B43A2FE2158E541100202EF2 /* zip.h in Headers */,
+				B43A2FE3158E541100202EF2 /* DDZippedFileInfo.h in Headers */,
+				B43A2FE5158E541100202EF2 /* DDZipReader.h in Headers */,
+				B43A2FE7158E541100202EF2 /* DDZipWriter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B43A2FA1158E3F8900202EF2 /* MountainNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43A2FAC158E3F8900202EF2 /* Build configuration list for PBXNativeTarget "MountainNotifier" */;
+			buildPhases = (
+				B43A2F9E158E3F8900202EF2 /* Sources */,
+				B43A2F9F158E3F8900202EF2 /* Frameworks */,
+				B4AD517D15D1BAE100DAD427 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B43A2FEB158E543E00202EF2 /* PBXTargetDependency */,
+				B43A2FB1158E4F6D00202EF2 /* PBXTargetDependency */,
+			);
+			name = MountainNotifier;
+			productName = MountainNotifier;
+			productReference = B43A2FA2158E3F8900202EF2 /* MountainNotifier */;
+			productType = "com.apple.product-type.tool";
+		};
+		B43A2FB7158E537700202EF2 /* DDMinizip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43A2FC4158E537700202EF2 /* Build configuration list for PBXNativeTarget "DDMinizip" */;
+			buildPhases = (
+				B43A2FB4158E537700202EF2 /* Sources */,
+				B43A2FB5158E537700202EF2 /* Frameworks */,
+				B43A2FB6158E537700202EF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMinizip;
+			productName = DDMinizip;
+			productReference = B43A2FB8158E537700202EF2 /* libDDMinizip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4EA1BB915D293720007B3C8 /* MountianGrowlPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4EA1BC915D293720007B3C8 /* Build configuration list for PBXNativeTarget "MountianGrowlPlugin" */;
+			buildPhases = (
+				B4EA1C7015D2BF060007B3C8 /* ShellScript */,
+				B4EA1BB615D293720007B3C8 /* Sources */,
+				B4EA1BB715D293720007B3C8 /* Frameworks */,
+				B4EA1BB815D293720007B3C8 /* Resources */,
+				B4EA1C6215D2993F0007B3C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4EA1C6115D2992D0007B3C8 /* PBXTargetDependency */,
+			);
+			name = MountianGrowlPlugin;
+			productName = MountianGrowlPlugin;
+			productReference = B4EA1BBA15D293720007B3C8 /* MountianGrowlPlugin.growlView */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B4F06AAD158A9C5200249913 /* MountainNotifierTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F06AC8158A9C5300249913 /* Build configuration list for PBXNativeTarget "MountainNotifierTemplate" */;
+			buildPhases = (
+				B4F06AAA158A9C5200249913 /* Sources */,
+				B4F06AAB158A9C5200249913 /* Frameworks */,
+				B4F06AAC158A9C5200249913 /* Resources */,
+				B4F06AF9158AD2CB00249913 /* CopyFiles */,
+				B4AD517A15D1BA2C00DAD427 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MountainNotifierTemplate;
+			productName = bundledNotifier;
+			productReference = B43A2F88158E3F2500202EF2 /* MountainNotifierTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4F06A8B158A92FC00249913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dominik Pich";
+			};
+			buildConfigurationList = B4F06A8E158A92FC00249913 /* Build configuration list for PBXProject "MountainNotifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				cs,
+				da,
+				de,
+				el,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				lv,
+				nb,
+				nl,
+				"pt-PT",
+			);
+			mainGroup = B4F06A89158A92FC00249913;
+			productRefGroup = B4F06A89158A92FC00249913;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4F06AAD158A9C5200249913 /* MountainNotifierTemplate */,
+				B43A2FA1158E3F8900202EF2 /* MountainNotifier */,
+				B4EA1BB915D293720007B3C8 /* MountianGrowlPlugin */,
+				B43A2FB7158E537700202EF2 /* DDMinizip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4EA1BB815D293720007B3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EA1C3F15D295340007B3C8 /* GrowlMountainNotifierPrefs.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F06AAC158A9C5200249913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2F98158E3F5500202EF2 /* Credits.rtf in Resources */,
+				B43A2F99158E3F5500202EF2 /* InfoPlist.strings in Resources */,
+				B43A2F9A158E3F5500202EF2 /* MainMenu.xib in Resources */,
+				B43A2F9B158E3F5500202EF2 /* Icon.icns in Resources */,
+				B4AD517C15D1BA6300DAD427 /* zipHelper.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4AD517A15D1BA2C00DAD427 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./MountainNotifierTemplate/zipHelper.sh;
+		};
+		B4AD517D15D1BAE100DAD427 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm ./MountainNotifierTemplate.zip #cleanup zip";
+		};
+		B4EA1C7015D2BF060007B3C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B43A2F9E158E3F8900202EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FA7158E3F8900202EF2 /* main.m in Sources */,
+				B4AD517415D1B89900DAD427 /* DDEmbeddedDataReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43A2FB4158E537700202EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2FDB158E541100202EF2 /* ioapi.c in Sources */,
+				B43A2FDD158E541100202EF2 /* mztools.c in Sources */,
+				B43A2FDF158E541100202EF2 /* unzip.c in Sources */,
+				B43A2FE1158E541100202EF2 /* zip.c in Sources */,
+				B43A2FE4158E541100202EF2 /* DDZippedFileInfo.m in Sources */,
+				B43A2FE6158E541100202EF2 /* DDZipReader.m in Sources */,
+				B43A2FE8158E541100202EF2 /* DDZipWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4EA1BB615D293720007B3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EA1C4015D295340007B3C8 /* GrowlMountainNotifierDisplay.m in Sources */,
+				B4EA1C4115D295340007B3C8 /* GrowlMountainNotifierPrefs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F06AAA158A9C5200249913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43A2F97158E3F5500202EF2 /* DDAppDelegate.m in Sources */,
+				B43A2F9D158E3F5500202EF2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B43A2FB1158E4F6D00202EF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F06AAD158A9C5200249913 /* MountainNotifierTemplate */;
+			targetProxy = B43A2FB0158E4F6D00202EF2 /* PBXContainerItemProxy */;
+		};
+		B43A2FEB158E543E00202EF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B43A2FB7158E537700202EF2 /* DDMinizip */;
+			targetProxy = B43A2FEA158E543E00202EF2 /* PBXContainerItemProxy */;
+		};
+		B4EA1C6115D2992D0007B3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B43A2FA1158E3F8900202EF2 /* MountainNotifier */;
+			targetProxy = B4EA1C6015D2992D0007B3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B43A2F8D158E3F5500202EF2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43A2F8E158E3F5500202EF2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B43A2F8F158E3F5500202EF2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43A2F90158E3F5500202EF2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B43A2F91158E3F5500202EF2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43A2F92158E3F5500202EF2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B4EA1C2415D295340007B3C8 /* GrowlMountainNotifierPrefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4EA1C2515D295340007B3C8 /* cs */,
+				B4EA1C2615D295340007B3C8 /* da */,
+				B4EA1C2715D295340007B3C8 /* de */,
+				B4EA1C2815D295340007B3C8 /* el */,
+				B4EA1C2915D295340007B3C8 /* en */,
+				B4EA1C2A15D295340007B3C8 /* es */,
+				B4EA1C2B15D295340007B3C8 /* fr */,
+				B4EA1C3415D295340007B3C8 /* it */,
+				B4EA1C3515D295340007B3C8 /* ja */,
+				B4EA1C3615D295340007B3C8 /* ko */,
+				B4EA1C3715D295340007B3C8 /* lv */,
+				B4EA1C3C15D295340007B3C8 /* nb */,
+				B4EA1C3D15D295340007B3C8 /* nl */,
+				B4EA1C3E15D295340007B3C8 /* pt-PT */,
+			);
+			name = GrowlMountainNotifierPrefs.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B43A2FAD158E3F8900202EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__ZIP,
+					__data,
+					MountainNotifierTemplate.zip,
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					MountainNotifier/Info.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B43A2FAE158E3F8900202EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__ZIP,
+					__data,
+					MountainNotifierTemplate.zip,
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					MountainNotifier/Info.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B43A2FC5158E537700202EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B43A2FC6158E537700202EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B4EA1BC715D293720007B3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MountianGrowlPlugin/MountianGrowlPlugin-Prefix.pch";
+				INFOPLIST_FILE = "MountianGrowlPlugin/MountianGrowlPlugin-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Debug;
+		};
+		B4EA1BC815D293720007B3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MountianGrowlPlugin/MountianGrowlPlugin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					NS_BLOCK_ASSERTIONS,
+				);
+				INFOPLIST_FILE = "MountianGrowlPlugin/MountianGrowlPlugin-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Release;
+		};
+		B4F06AA1158A92FC00249913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B4F06AA2158A92FC00249913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4F06AC9158A9C5300249913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MountainNotifierTemplate/Prefix.pch;
+				INFOPLIST_FILE = MountainNotifierTemplate/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4F06ACA158A9C5300249913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MountainNotifierTemplate/Prefix.pch;
+				INFOPLIST_FILE = MountainNotifierTemplate/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B43A2FAC158E3F8900202EF2 /* Build configuration list for PBXNativeTarget "MountainNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43A2FAD158E3F8900202EF2 /* Debug */,
+				B43A2FAE158E3F8900202EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43A2FC4158E537700202EF2 /* Build configuration list for PBXNativeTarget "DDMinizip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43A2FC5158E537700202EF2 /* Debug */,
+				B43A2FC6158E537700202EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4EA1BC915D293720007B3C8 /* Build configuration list for PBXNativeTarget "MountianGrowlPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EA1BC715D293720007B3C8 /* Debug */,
+				B4EA1BC815D293720007B3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F06A8E158A92FC00249913 /* Build configuration list for PBXProject "MountainNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F06AA1158A92FC00249913 /* Debug */,
+				B4F06AA2158A92FC00249913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F06AC8158A9C5300249913 /* Build configuration list for PBXNativeTarget "MountainNotifierTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F06AC9158A9C5300249913 /* Debug */,
+				B4F06ACA158A9C5300249913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4F06A8B158A92FC00249913 /* Project object */;
+}
