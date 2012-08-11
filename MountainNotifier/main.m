@@ -151,17 +151,19 @@ NSImage *readIcon(NSString *callerKey, NSString *n) {
                 NSURL *url = [NSURL URLWithString:n];
                 if(url) {
                     icon = [[NSImage alloc] initWithContentsOfURL:url];
-                    if(!icon) {
-                        //use callerkey -- which could be a bundle
-                        url = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:callerKey];
-                        if(url)
-                            icon = [[NSWorkspace sharedWorkspace] iconForFile:url.path];                    
-                    }
                 }
             }
         }
     }
     
+    //final fallback
+    if(!icon) {
+        //use callerkey -- which could be a bundle
+        NSURL* url = [[NSWorkspace sharedWorkspace] URLForApplicationWithBundleIdentifier:callerKey];
+        if(url)
+            icon = [[NSWorkspace sharedWorkspace] iconForFile:url.path];
+    }
+
     return icon;
 }
 #pragma mark entry
@@ -206,6 +208,8 @@ int main(int argc, const char * argv[])
         NSImage *icon = nil;
         if(args.count>=6) {
             icon = readIcon(callerKey, args[5]);
+        } else {
+            icon = readIcon(callerKey, nil);
         }
         
 #ifdef DEBUG
