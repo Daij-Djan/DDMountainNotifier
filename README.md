@@ -24,6 +24,22 @@ I included a plugin for growl 1.3 (current appstore version) which sends ANY gro
 
 With Growl running double click the MountianGrowlPlugin.growlView file to install it and enable it in growl's preferences so all notifications go the notification area (later on ;))
 
+##how it works (ruffly)
+Same as other comparable projects, MountainNotifier has to deal with the ML notification API from Apple and suffers from its restrictions. 
+- a) the API only accepts notifications from Cocoa Apps -- which MountainNotifier is not. No script is either :P
+- b) The Notification Center always uses the application’s own icon, there’s currently no way to specify a custom icon for a notification. 
+
+MountainNotifier works around both issues with an 'evil' but harmless hack :D (No system files are modified or so)<br/>
+<b>For every caller it shall post a notification for it writes a proxy app</b> with the correct identifier and the specified icon. That proxy is then called to post the final notification to ML.<br/>
+<br/>
+The proxy app's are in ~/Library/Application Support/MountainNotifier. (1 per caller)
+
+###Wrong Icon?
+The ML notification center caches the icon foreach caller. that means that while MountainNotifier can change the icon for one caller multiple times, ML will NOT reflect that right away.<br/>
+ML Notification center can have N callers but every caller has 1 icon.<br/>
+<br/>
+<b>A change of the caller's icon will only show up when the category is removed from the center and the system is rebooted (or maybe when the proxy app is deleted)</b>
+ 
 ##everything prebuilt as well
 In the Downloads area there is all content built for 10.8. 
 Nothing is code-signed though yet :)
