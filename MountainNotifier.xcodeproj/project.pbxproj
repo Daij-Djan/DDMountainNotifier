@@ -160,6 +160,9 @@
 		B4EA1C6915D2BE3A0007B3C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B4EA1C6D15D2BE4C0007B3C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
 		B4F06AA8158A9B8500249913 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B4F36CEB15E0108600BA22E2 /* GrowlTicketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlTicketController.h; sourceTree = "<group>"; };
+		B4F36CED15E0109F00BA22E2 /* GrowlAbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlAbstractSingletonObject.h; sourceTree = "<group>"; };
+		B4F36CEE15E010B400BA22E2 /* GrowlApplicationTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlApplicationTicket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				B4EA1C4A15D296340007B3C8 /* GrowlDefines.h */,
+				B4F36CEB15E0108600BA22E2 /* GrowlTicketController.h */,
+				B4F36CED15E0109F00BA22E2 /* GrowlAbstractSingletonObject.h */,
+				B4F36CEE15E010B400BA22E2 /* GrowlApplicationTicket.h */,
 				B4EA1C4B15D296340007B3C8 /* GrowlDefinesInternal.h */,
 				B4EA1C4C15D296340007B3C8 /* GrowlDisplayPlugin.h */,
 				B4EA1C4D15D296340007B3C8 /* GrowlNotification.h */,

@@ -10,6 +10,8 @@
 #import "NSStringAdditions.h"
 #import "GrowlDefinesInternal.h"
 #import "GrowlNotification.h"
+#import "GrowlTicketController.h"
+#import "GrowlApplicationTicket.h"
 #include <Security/SecKeychain.h>
 #include <Security/SecKeychainItem.h>
 
@@ -29,7 +31,7 @@
 
 - (void) displayNotification:(GrowlNotification *)notification {
     NSString *path = [[NSBundle bundleWithIdentifier:@"com.Growl.MountainNotifier"] pathForResource:@"MountainNotifier" ofType:nil];
-
+    
     //name
     NSString *name = notification.applicationName;
     if(!name) {
@@ -67,9 +69,16 @@
     
     //always revert to appicon!
     notification.icon = nil;
-    id data=[notification.auxiliaryDictionary objectForKey:GROWL_NOTIFICATION_APP_ICON_DATA];
+    id data=[notification.auxiliaryDictionary objectForKey:GROWL_APP_ICON_DATA];
     if(!data)
-        data=[notification.auxiliaryDictionary objectForKey:GROWL_APP_ICON_DATA];
+        data=[notification.auxiliaryDictionary objectForKey:GROWL_NOTIFICATION_APP_ICON_DATA];
+    if(!data) {
+        NSString *appName = notification.applicationName;
+        if(appName.length) {
+            GrowlApplicationTicket *ticket = [[GrowlTicketController sharedController] ticketForApplicationName:appName hostName:nil];
+            data = ticket.iconData;
+        }
+    }
     
     if(data) {
         notification.icon = [[[NSImage alloc] initWithData:data] autorelease];
@@ -82,13 +91,14 @@
         [[notification.icon TIFFRepresentation] writeToFile:iconpath atomically:NO];
     }
     else {
+        //NO ICON - Fallback
         iconpath = [[NSBundle mainBundle] pathForResource:@"Growl" ofType:@"icns"];
     }
-         
+    
     //launch tool
     NSTask *tool = [NSTask launchedTaskWithLaunchPath:path arguments:[NSArray arrayWithObjects:name, title, subtitle, message, iconpath, nil]];
     [tool waitUntilExit];
-
+    
     //if we wrote an icon, clean up
     if(notification.icon)
         [[NSFileManager defaultManager] removeItemAtPath:iconpath error:nil];
